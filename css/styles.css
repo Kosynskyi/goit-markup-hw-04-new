@@ -33,6 +33,15 @@ img {
   border-bottom: 1px solid #ececec;
 }
 .main-section {
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/main-section/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 200px;
@@ -64,7 +73,7 @@ img {
   background-color: #2f303a;
 }
 
-/* оформление логотипа хедера */
+/* оформление хедера */
 .logo-header,
 .span-header {
   font-family: Raleway;
@@ -128,10 +137,12 @@ img {
   line-height: 1.14;
 }
 .contacts-header {
+  display: flex;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 0;
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 .contacts-footer {
@@ -149,11 +160,21 @@ img {
   display: flex;
   align-items: center;
 }
+
+.header-svg {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.header-svg:hover,
+.header-svg:active {
+  fill: var(--accent-color);
+}
+
 /* оформление main-section */
 .main-title {
   max-width: 696px;
   margin: 0 auto 30px;
-  background: #2f303a;
   color: var(--bg-white-color);
   font-size: 44px;
   line-height: 1.4;
@@ -245,6 +266,32 @@ img {
   margin: -1px;
 }
 
+/* .feature-svg {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+} */
+.feature-svg {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.feature-icon {
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  outline: 1px solid green;
+}
+
 /* оформление секции с картинками */
 
 .title-image {
@@ -292,6 +339,11 @@ img {
 .personal .photo-list:last-child {
   margin-right: 0;
 }
+
+.item {
+  outline: 1px solid red;
+}
+
 .photo {
   margin-top: 0;
   /* margin-bottom: 30px; */
@@ -327,7 +379,33 @@ img {
   line-height: 1.19;
   text-align: center;
 }
-
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.networks {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  /* outline: 1px solid red; */
+}
+.networks:last-child {
+  margin-right: 0;
+}
+.networks-item {
+  fill: rgba(175, 177, 184, 1);
+  cursor: pointer;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-size: cover;
+  border-radius: 50%;
+}
+.networks-item:hover,
+.networks-item:active {
+  background-color: var(--accent-color);
+  fill: var(--bg-white-color);
+}
 /* оформление логотипа футера */
 .container-footer {
   align-content: center;
