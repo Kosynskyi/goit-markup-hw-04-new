@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --bg-white-color: #ffffff;
+  --icons-color: #afb1b8;
 }
 /* цвет линии #ECECEC */
 ul {
@@ -373,20 +374,32 @@ img {
 }
 .profession {
   margin-top: 0;
-  /* margin-bottom: 30px; */
+  margin-bottom: 16px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+/* оформление ссылок на соцсети */
 .social-link {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.networks {
+.networks-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
+  color: var(--icons-color);
+  border-radius: 50%;
+  /* outline: 1px solid green; */
+}
+
+.networks {
+  /* display: block;
+  padding: 0; */
   margin-right: 10px;
   /* outline: 1px solid red; */
 }
@@ -394,18 +407,60 @@ img {
   margin-right: 0;
 }
 .networks-item {
-  fill: rgba(175, 177, 184, 1);
-  cursor: pointer;
-  padding-right: 12px;
-  padding-left: 12px;
-  background-size: cover;
-  border-radius: 50%;
+  /* display: block; */
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
-.networks-item:hover,
-.networks-item:active {
+.networks-link:hover,
+.networks-link:active {
+  color: var(--bg-white-color);
   background-color: var(--accent-color);
-  fill: var(--bg-white-color);
 }
+
+/* оформление секции клиенты */
+.client-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.client-logo {
+  margin-right: 30px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-logo:hover,
+.client-logo:active {
+  border-color: var(--accent-color);
+}
+.client-logo:last-child {
+  margin-right: 0;
+}
+.client-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--icons-color);
+  width: 170px;
+  height: 92px;
+
+  /* outline: 1px solid green; */
+}
+.client-items:hover,
+.client-items:active {
+  color: var(--accent-color);
+  background-color: var(--bg-white-color);
+}
+.client-icons {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 /* оформление логотипа футера */
 .container-footer {
   align-content: center;
